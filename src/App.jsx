@@ -6,7 +6,7 @@ import SimulatePhase from './components/phases/SimulatePhase';
 import PlayPhase from './components/phases/PlayPhase';
 import ReflectPhase from './components/phases/ReflectPhase';
 import { useAudio } from './hooks/useAudio';
-import { speakText, stopNarration, unlockAudio } from './utils/audio';
+import { speakText, stopNarration, unlockAudio, AUDIO_MODULE_ACTIVE } from './utils/audio';
 
 const STORAGE_KEY = 'intellia_sharing_ratio_session_v1';
 
@@ -32,7 +32,7 @@ export default function App() {
   const [usedQuestionIds, setUsedQuestionIds] = useState({}); // { 0: ['Q1_001, ...]
   const [correctAnswers, setCorrectAnswers] = useState(0);
   
-  // Settings
+  // Settings - Audio enabled using local MP3 files
   const [audioEnabled, setAudioEnabled] = useState(true);
 
   // Hook for Web Audio SFX

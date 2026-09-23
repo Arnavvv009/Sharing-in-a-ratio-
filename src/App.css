@@ -526,7 +526,9 @@ h6 {
   width: calc(100% + 36px);
   margin-left: -18px;
   margin-top: -16px;
-  height: 380px;
+  aspect-ratio: 20 / 8;
+  height: auto;
+  max-height: 380px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
@@ -535,6 +537,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .story-content-section {
@@ -1951,7 +1954,9 @@ h6 {
   }
 
   .story-img-bleed {
-    height: 220px;
+    aspect-ratio: 20 / 8;
+    height: auto;
+    max-height: 240px;
   }
 
   .story-title {
@@ -2046,7 +2051,9 @@ h6 {
   }
 
   .story-img-bleed {
-    height: 170px;
+    aspect-ratio: 20 / 8;
+    height: auto;
+    max-height: 180px;
   }
 
   /* Simulate tabs — show badge letter only */

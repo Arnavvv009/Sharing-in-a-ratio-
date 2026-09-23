@@ -21,7 +21,7 @@ export default function IntroScreen({ onBegin, audioEnabled = true, setAudioEnab
   };
 
   const handleReplayIntro = () => {
-    if (speak) {
+    if (speak && audioEnabled) {
       speak(introNudge);
     }
   };

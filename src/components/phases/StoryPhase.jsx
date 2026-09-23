@@ -3,33 +3,33 @@ import Mascot from '../shared/Mascot';
 
 const Slide1Illustration = () => (
   <img
-    src="/assets/images/slide1-what-is-a-ratio.svg"
-    alt="A ratio of 4 to 5 drawn as nine equal blocks split between two people"
-    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+    src="/assets/images/slide1-what-is-a-ratio.jpg"
+    alt="Robo explaining a ratio of 4 to 5 with Aisha holding 4 parts and Ben holding 5 parts"
+    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
   />
 );
 
 const Slide2Illustration = () => (
   <img
-    src="/assets/images/slide2-add-the-parts.svg"
-    alt="Adding the ratio parts to get nine, then dividing forty-five by nine to find one part"
-    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+    src="/assets/images/slide2-add-the-parts.jpg"
+    alt="Adding the ratio parts 4 + 5 = 9, and dividing 45 by 9 to find one part equals 5 sweets"
+    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
   />
 );
 
 const Slide3Illustration = () => (
   <img
-    src="/assets/images/slide3-multiply-out.svg"
-    alt="Multiplying each ratio number by the value of one part to find each share"
-    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+    src="/assets/images/slide3-multiply-out.jpg"
+    alt="Multiplying each ratio number: Aisha gets 4 x 5 = 20 sweets, Ben gets 5 x 5 = 25 sweets"
+    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
   />
 );
 
 const Slide4Illustration = () => (
   <img
-    src="/assets/images/slide4-check-it.svg"
-    alt="Checking that twenty plus twenty-five adds back up to forty-five"
-    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+    src="/assets/images/slide4-check-it.jpg"
+    alt="Checking that 20 + 25 = 45 sweets adds back to the original total"
+    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
   />
 );
 
@@ -104,7 +104,7 @@ export default function StoryPhase({ onNext, speak }) {
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', width: '100%', flex: '1', padding: '16px 14px 20px 14px', position: 'relative', overflow: 'hidden', animation: 'slideInUp 0.4s ease-out', marginTop: '8px' }}>
-        <div className="story-img-bleed" style={{ aspectRatio: '2.5', height: 'auto', maxHeight: '360px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px', overflow: 'hidden', flexShrink: 0, marginLeft: '-14px', width: 'calc(100% + 28px)' }}>
+        <div className="story-img-bleed" style={{ aspectRatio: '20 / 8', height: 'auto', maxHeight: '360px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px', overflow: 'hidden', flexShrink: 0, marginLeft: '-14px', width: 'calc(100% + 28px)' }}>
           <CurrentIllustration />
         </div>
 
